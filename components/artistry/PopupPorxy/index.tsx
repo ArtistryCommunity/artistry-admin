@@ -28,7 +28,7 @@ export default function APopupProxy({children}: Props) {
         <div className="fixed inset-0 flex w-screen items-center justify-center p-4">
           <DialogPanel className="max-w-lg space-y-4 border bg-white p-12">
             <DialogTitle>Deactivate account order</DialogTitle>
-
+            { children({isOpen: open, close, }) }
           </DialogPanel>
         </div>
       </Dialog> */}
